@@ -1,6 +1,6 @@
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 
-print " ^C entered, stopping web server...."
+
 class WebServerHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
