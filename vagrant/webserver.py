@@ -22,6 +22,10 @@ class WebServerHandler(BaseHTTPRequestHandler):
             for restaurant in restaurants:
                 output += restaurant.name
                 output += "</br>"
+                output += "<a href = '#'>Edit</a>"
+                output += "</br>"
+                output += "<a href = '#'>Delete</a>"
+                output += "</br></br></br>"
             output += "</html></body>"
             self.wfile.write(output)
             print output
